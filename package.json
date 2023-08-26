@@ -1,0 +1,29 @@
+{
+  "name": "prismatest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "db:generate": "npx prisma generate",
+    "db:migrate:dev": "npx prisma migrate dev",
+    "db:migrate:prod": "npx prisma migrate deploy",
+    "seed:1m": "ts-node prisma/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@types/pg": "^8.10.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.2.0",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "prisma": "^5.2.0"
+  }
+}
